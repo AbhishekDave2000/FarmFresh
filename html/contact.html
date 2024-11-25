@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Farm Fresh - Contact Us</title>
+
+		<link rel="icon" href="../img/logo.png" type="image/x-icon">
+
+		<link rel="stylesheet" type="text/css" href="../css/contactstyle.css">
+		<link rel="stylesheet" href="../css/common-style.css">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		<!-- Link to the external javascript -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+		<!-- Sweet alert CDN link -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+	</head>
+	<body onscroll="onScrollAnimations()">
+		<header>
+			<nav id="navigation-bar">
+				<div class="company-logo-div">
+					<img src="../img/logo.png" alt="Website Logo" id="site-logo">
+				</div>
+				<div class="navbar-main-div">
+					<div id="menu" class="humberger-menu" onclick="toggleMenu()">
+						<div id="humberger-first-div"></div>
+						<div id="humberger-second-div"></div>
+						<div id="humberger-third-div"></div>
+					</div>
+					<ul id="navbar-list">
+						<li><a href="./index.html">Home</a></li>
+						<li id="productListingButton"><a href="./productListing.html" onclick="checkUserLogin()">Product Listing</a></li>
+						<!-- <li><a href="./blog.html">Blog</a></li> -->
+						<li><a href="./contact.html">Contact</a></li>
+						<li class="navbar-dropdown" id="registerButton"><a href="./Registration.html">User</a></li>
+                        <li id="cartButton"><a href="./cart.html">Cart</a></li>
+                        <li id="logoutButton" onclick="logoutUser()"><a href="">Logout</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="header"></div>
+		</header>
+
+		<main>
+			<!-- Top scroll button div Start -->
+            <div class="top-scroll-button" id="top-scroll-button">
+                <a href="#">
+                    <img src="../img/UpArrow2.png" alt="Up Arrow">
+                </a>
+            </div>
+            <!-- Top scroll button div End -->
+
+			<section class="location">
+				<!-- Google Maps Embed -->
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184552.30943582457!2d-79.37805805!3d43.7182412!2m3!1f0!2f0!3f0!3m2
+				!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON!5e0!3m2!1sen!2sca!4v1710951492872
+				!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+				referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<br><br><br><br>
+			</section>
+
+			<section class="contact-us">
+				<h2> Contact Us for more enquiry</h2>
+				<div class="row">
+					<div class="contact-col">
+						<!-- Contact information -->
+						<div>
+							<i class="fa-solid fa-house"></i>
+							<span>
+								<h5>XYZ Road, ABC Building</h5>
+								<p>Toronto, Ontario, CA</p>
+							</span>
+						</div>
+	
+						<div>
+							<i class="fa-solid fa-phone"></i>
+							<span>
+								<h5>+1 (123)456-7890</h5>
+								<p>Monday To Saturday, 10AM To 7PM</p>
+							</span>
+						</div>
+	
+						<div>
+							<i class="fa-solid fa-envelope"></i>
+							<span>
+								<h5>abc@xyz.com</h5>
+								<p>Email Us Your Query</p>
+							</span>
+						</div>
+					</div>
+					
+					<div class="contact-col">
+						<!-- Contact form -->
+						<form action="index.html" method="post">
+							<input type="text" placeholder="Enter Your Name" required>
+							<input type="email" placeholder="Enter Your Email-Id" required>
+							<input type="text" placeholder="Enter Your Subject" required>
+							<textarea rows="8" placeholder="Type Your Message" required></textarea>
+							<button type="submit" class="hero-btn red-btn">Send Message</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="waves">
+				<div class="wave" id="wave1"></div>
+				<div class="wave" id="wave2"></div>
+				<div class="wave" id="wave3"></div>
+				<div class="wave" id="wave4"></div>
+
+			</div>
+			<ul class="social_icon">
+				<li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+				<li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+				<li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+				<li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+			</ul>
+			<ul class="menu">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Purchase</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
+			<p>&#169;2021 Fram Fresh | All Rights Reserved</p>
+		</footer>
+
+		<script src="../js/common.js"></script>
+	</body>
+</html>

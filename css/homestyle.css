@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Quicksand');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'quicksand',Arial, Helvetica, sans-serif;
+}
+
+.header {
+	background-image: linear-gradient(rgba(12, 129, 65, 0.7), rgba(4, 9, 30, 0.7)),url("../img/venti-views-n_NdvlWtFDE-unsplash.jpg");
+	min-height: 100vh;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+#navigation-bar {
+    background-color: transparent;
+	position: fixed;
+	top: 0;
+}
+
+.head-lines {
+	width: 90%;
+	color: whitesmoke;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+
+.head-lines h1 {
+	font-size: 50px;
+}
+
+.head-lines p {
+	margin: 20px 0  40px;
+	font-size: 20px;
+	color: whitesmoke;
+}
+
+#Knowmore-btn {
+	display: inline-block;
+	text-decoration: none;
+	color: whitesmoke;
+	border: 1px solid;
+	padding: 8px;
+	font-size: 15px;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+	margin-top: 30px;
+}
+
+#Knowmore-btn:hover {
+	border: 1px solid #f44336;
+	background: #f44336;
+	transition: 1s;
+}
+
+@media(max-width: 700px){
+	.head-lines h1 {
+		font-size: 25px;
+	}
+	.head-lines p{
+		font-size: 15px;
+	}
+}
+
+
+.colm {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 80px;
+	padding-bottom: 80px;;
+}
+.colm h1{
+	font-size: 36px;
+	font-weight: 600;
+}
+.colm p {
+	color: #777;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 22px;
+	padding: 10px;
+}
+.row {
+	margin-top: 5%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10%;
+}
+
+.col{
+	flex-basis: 23%;
+	/* background-color: ; */
+	box-shadow: 0 0 10px #355E3B;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	padding: 20px 20px;
+	margin: 0 10px;
+	box-sizing: border-box;
+}
+
+.left-col{
+	opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.right-col{
+	opacity: 0;
+    transform: translateX(+100px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.col.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+h3 {
+	text-align: center;
+	font-weight: 600;
+	margin: 10px 0;
+}
+
+.col:hover{
+	box-shadow: 5px 5px 20px #355E3B;
+}
+
+@media(max-width: 700px){
+	.row {
+		flex-direction: column;
+		margin: 0 20px;
+	}
+	.col{
+		margin: 10px;
+		padding: 0 20px;
+	
+	}
+}

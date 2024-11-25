@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Quicksand');
+
+
+* {
+    font-family: 'quicksand',Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    transition: 2s ease-in-out;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    position: relative;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Start of the navbar styles */
+#navigation-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.2em 0em;
+    background-color: #4F7942;
+    min-height: 40px;
+    transition: 0.2s ease-in-out;
+    min-width: 100%;
+    z-index: 5;
+}
+
+#navigation-bar , .dropdown-content{
+	background-color: #4F7942;
+}
+
+.cards-heading p{
+    font-size: 2em;
+    font-weight: 800;
+    color: #4F7942;
+    text-align: center;
+}
+
+.company-logo-div{
+    margin: 0px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#site-logo{
+    max-width: 6em;
+    margin-left: 10px;
+}
+
+.navbar-main-div {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 12px;
+}
+
+.humberger-menu{
+    height: fit-content;
+    background: none;
+    border: none;
+    position: relative;
+    margin-top: 1em;
+    margin-right: 0.5em;
+}
+
+.humberger-menu div{
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 6px;
+}
+
+#navbar-list {
+    list-style: none;
+    position: absolute;
+    top: 70px;
+    right: 0.8em;
+    display: none !important;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+#navbar-list > li {
+    margin: 5px 0em;
+    text-align: right;
+    color: white;
+}
+
+#navbar-list > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+    padding: 30px 16px;
+    padding-bottom: 10px;
+    z-index: 10;
+    left: -18px;
+}
+
+.dropdown-content a{
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.navbar-dropdown:hover .dropdown-content {
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+/* End of the navbar styles */
+
+#userInfo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+#userInfo span{
+    font-size: 1.6em;
+    color: #4F7942;
+    font-weight: 500;
+}
+
+
+/* Start of the footer styles */
+
+footer{
+    position: relative;
+    background: rgb(80, 190, 33);
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+footer .social_icon,
+footer .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+footer .social_icon li,
+footer .menu li {
+    list-style: none;
+    list-style-type: none;
+}
+
+footer .social_icon li a{
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+footer .social_icon li a:hover {
+    transform: translateY(-10px);
+}
+footer .menu li a
+{
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+}
+footer .menu li a:hover
+{
+    opacity: 1;
+}
+footer p
+{
+    color: #fff;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+footer .wave
+{
+    position: absolute;
+    top :-100px;
+    left:0;
+    width: 100%;
+    height:100px;
+    background: url(../img/wave.png);  
+    background-size: 1000px 100px;
+}
+footer .wave#wave1
+{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+footer .wave#wave2
+{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+}
+footer .wave#wave3
+{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+}
+footer .wave#wave4
+{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_02 3s linear infinite;
+}
+@keyframes animateWave
+{
+    0% 
+    {
+        background-position-x: 1000px;
+    }
+    
+    100% 
+    {
+        background-position-x: 0px;
+    }
+}
+@keyframes animateWave_02
+{
+    0% 
+    {
+        background-position-x: 0px;
+    }
+    
+    100% 
+    {
+        background-position-x: 1000px;
+    }
+}
+
+@media(max-width: 700px){
+	footer .wave {
+		position: absolute;
+		top :-80px;
+		left:0;
+		width: 100%;
+		height:100px; 
+		background-size: 1000px 100px;
+	}
+}
+
+/* End of the footer styles */
+
+/* Top Scroll button CSS */
+.top-scroll-button{
+    position: fixed;
+    bottom: 30px;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #4F7942;
+    display: none;
+    z-index: 8;
+}
+
+.top-scroll-button a{
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease-in;
+}
+
+.top-scroll-button a img{
+    max-width: 60%;
+}
+
+/* For Mobile devices */
+@media screen and (min-width: 500px) {
+    .top-scroll-button{
+        bottom: 30px;
+        left: 20px;
+        width: 40px;
+        height: 40px;
+    }
+    #site-logo{
+        max-width: 5em;
+    }
+    .humberger-menu{
+        margin-top: 0.6em;
+    }
+    .top-scroll-button{
+        bottom: 30px;
+        left: 20px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+/* For Laptops */
+@media screen and (min-width: 769px) {
+    #navigation-bar {
+        align-items: center;
+    }
+    #navbar-list {
+        display: flex !important;
+        flex-direction: row !important;
+        list-style: none;
+        position: unset;
+        top: 0px;
+    }
+    #navbar-list > li {
+        margin: 0px 2em;
+        text-align: right;
+    }
+    #site-logo{
+        max-width: 8em;
+    }
+    .navbar-main-div {
+        justify-content: center;
+        margin-top: 0;
+    }
+    .humberger-menu{
+        display: none;
+    }
+    #news-letter-email-input{
+        min-width: 20vw;
+    }
+    .show-in-mobile-nav-links{
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 250px) and (max-width: 768px) {
+    .navbar-dropdown{
+        display: none !important;
+    }
+    .show-in-mobile-nav-links{
+        display: inline-block;
+    }
+}

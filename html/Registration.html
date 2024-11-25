@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Viewport settings for responsive design -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" href="../img/logo.png" type="image/x-icon">
+
+        <!-- Title of the webpage -->
+        <title>Farm Fresh - Registration</title>
+
+        <!-- Link to external CSS file for styles -->
+        <link rel="stylesheet" href="../css/Registration.css" />
+        <link rel="stylesheet" href="../css/common-style.css">
+        
+        <!-- Include jQuery library -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!-- Include jQuery validation plugin --->
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.3/jquery.validate.min.js"></script>
+
+        <!-- Sweet alert CDN link -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </head>
+
+    <body>
+        <header>
+            <nav id="navigation-bar">
+                <div class="company-logo-div">
+                    <img src="../img/logo.png" alt="Website Logo" id="site-logo">
+                </div>
+                <div class="navbar-main-div">
+                    <div id="menu" class="humberger-menu" onclick="toggleMenu()">
+                        <div id="humberger-first-div"></div>
+                        <div id="humberger-second-div"></div>
+                        <div id="humberger-third-div"></div>
+                    </div>
+                    <ul id="navbar-list">
+                        <li><a href="./index.html">Home</a></li>
+                        <li id="productListingButton"><a href="./productListing.html" onclick="checkUserLogin()">Product Listing</a></li>
+                        <!-- <li><a href="./blog.html">Blog</a></li> -->
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li class="navbar-dropdown" id="registerButton"><a href="./Registration.html">User</a></li>
+                        <li id="cartButton"><a href="./cart.html">Cart</a></li>
+                        <li id="logoutButton" onclick="logoutUser()"><a href="">Logout</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main container for the form modal -->
+        <main>
+            <div class="form-modal">
+                <!-- Container for the toggle buttons -->
+                <div class="form-toggle">
+                    <!-- Button to toggle to the login form -->
+                    <button id="login-toggle" onclick="toggleLogin()">log in</button>
+                    <!-- Button to toggle to the signup form -->
+                    <button id="signup-toggle" onclick="toggleSignup()">sign up</button>
+                    <!-- Button to toggle to the edit form -->
+                    <button id="edit-toggle" onclick="toggleEdit()">edit info</button>
+                </div>
+                
+                <!-- Container for the login form -->   
+                <div id="login-form">
+                    <form>
+                        <!-- Input field for email or username -->
+                        <input type="text" name="emailOrUsername" placeholder="Enter email or username" required>
+                        <!-- Input field for password -->
+                        <input type="password" name="password" placeholder="Enter password" required>
+                        <!-- Submit button for login form -->
+                        <button type="submit" class="btn login">login</button>
+                        <p><a href="javascript:void(0)">Forgotten account</a></p>
+                        <hr/>
+                    </form>
+                </div>
+                
+                <!-- Container for the signup form --> 
+                <div id="signup-form">
+                    <form>
+                        <!-- Input field for email -->
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                        <!-- Input field for username -->
+                        <input type="text" name="username" placeholder="Choose username" required>
+                        <!-- Input field for password -->
+                        <input type="password" name="password1" placeholder="Create password" required>
+                        <!-- Submit button for signup form -->
+                        <button type="submit" class="btn signup">create account</button>
+                        <!-- Reset button for signup form -->
+                        <button type="reset" class="btn reset">reset</button>
+                        <hr/>
+                    </form>
+                </div>
+
+                <!-- Container for the edit form -->
+                <div id="edit-form">
+                    <form>
+                        <!-- Input field for email -->
+                        <input type="email" name="editEmail" placeholder="Enter your new email" required>
+                        <!-- Input field for username -->
+                        <input type="text" name="editUsername" placeholder="Enter your new username" required>
+                        <!-- Input field for password -->
+                        <input type="password" name="editPassword" placeholder="Enter your new password" required>
+                        <!-- Submit button for edit form -->
+                        <button type="submit" class="btn edit">update info</button>
+                        <hr/>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+
+            </div>
+            <ul class="social_icon">
+                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            </ul>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Purchase</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <p>&#169;2021 Fram Fresh | All Rights Reserved</p>
+        </footer>
+
+        <script src="../js/common.js"></script>
+        <!-- Link to external JavaScript file for scripts -->
+        <script type="text/javascript" src="../js/Registartion.js"></script>
+    </body>
+</html>

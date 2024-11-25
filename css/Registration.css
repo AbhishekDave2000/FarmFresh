@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Quicksand');
+
+
+*{
+    font-family: 'quicksand',Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Style for the body element */
+body{
+    background:#fff; 
+}
+
+/* Style for the modal form container */
+.form-modal{
+    position:relative;
+    width:450px;
+    height:auto;
+    margin-top:4em;
+    margin-bottom: 6em;
+    left:50%;
+    transform:translateX(-50%);/* Center the modal horizontally */
+    background:#fff;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow:0 3px 20px 0px rgba(0, 0, 0, 0.1)/* Add shadow for depth */
+}
+
+/* Style for all buttons within the form modal */
+.form-modal button{
+    cursor: pointer;
+    position: relative;
+    text-transform: capitalize;/* Capitalize first letter */
+    font-size:1em;
+    z-index: 2;
+    outline: none;
+    background:#fff;
+    transition:0.2s;/* Smooth transition for background changes */
+}
+
+
+/* Style for buttons with class .btn within the form modal */
+.form-modal .btn{
+    border-radius: 20px;
+    border:none;
+    font-weight: bold;
+    font-size:1.2em;
+    padding:0.8em 1em 0.8em 1em!important;
+    transition:0.5s;/* Smooth transition for background changes */
+    border:1px solid #ebebeb;
+    margin-bottom:0.5em;
+    margin-top:0.5em;
+}
+
+/* Styles for login, signup and edit buttons */
+.form-modal .login , .form-modal .signup, .form-modal .edit{
+    background:#57b846;
+    color:#fff;
+}
+
+/* Hover effect for login, signup and edit buttons */
+.form-modal .login:hover , .form-modal .signup:hover, .form-modal .edit:hover{
+    background:#222;
+}
+
+/* Style for the form toggle container */
+.form-toggle{
+    position: relative;
+    width:100%;
+    height:auto;
+}
+
+/* Style for buttons within the form toggle */
+.form-toggle button{
+    width:33%;
+    float:left;
+    padding:2.2em;
+    margin-bottom:1.5em;
+    border:none;
+    transition: 0.2s;
+    font-size:1em;
+    font-weight: bold;
+}
+
+/* Style for the first toggle button */
+.form-toggle button:nth-child(1){
+    /*border-bottom-right-radius: 20px;*/
+    border-top-left-radius: 20px;
+    width: 34%;
+}
+
+/* Style for the third toggle button */
+.form-toggle button:nth-child(3){
+    border-top-left-radius: none;
+    border-top-right-radius: 20px;
+    /*border-bottom-left-radius: 20px;*/
+}
+
+/* Style for the login toggle button */
+#login-toggle{
+    background:#57b846;
+    color:#ffff;
+}
+
+/* Style for forms within the form modal */
+.form-modal form{
+    position: relative;
+    width:90%;
+    height:auto;
+    left:50%;
+    transform:translateX(-50%);  
+}
+
+/* Style for login, signup and edit forms */
+#login-form , #signup-form, #edit-form{
+    position:relative;
+    width:100%;
+    height:auto;
+    padding-bottom:1em;
+}
+
+/* Hide the signup and edit form by default */
+#signup-form, #edit-form{
+    display: none;
+}
+
+/* Style for buttons within login, signup and edit-form forms */
+#login-form button , #signup-form button, #edit-form button{
+    width:100%;
+    margin-top:0.5em;
+    padding:0.6em;
+}
+
+/* Add styles for the reset button */
+.form-modal .reset {
+    background: #57b846;
+    color: #fff;
+    margin-top: 0.5em;
+}
+
+/* Hover effect for the reset button */
+.form-modal .reset:hover {
+    background: #222;
+}
+
+/* Style for input fields within the form modal */
+.form-modal input{
+    position: relative;
+    width:100%;
+    font-size:1em;
+    padding:1.2em 1.7em 1.2em 1.7em;
+    margin-top:0.6em;
+    margin-bottom:0.6em;
+    border-radius: 20px;
+    border:none;
+    background:#ebebeb;
+    outline:none;
+    font-weight: bold;
+    transition:0.4s;
+}
+
+/* Focus and active state for input fields */
+.form-modal input:focus , .form-modal input:active{
+    transform:scaleX(1.02);
+}
+
+/* Placeholder text color for input fields */
+.form-modal input::-webkit-input-placeholder{
+    color:#222;
+}
+
+/* Style for paragraph elements within the form modal */
+.form-modal p{
+    font-size:16px;
+    font-weight: bold;
+}
+
+/* Style for links within paragraph elements */
+.form-modal p a{
+    color:#57b846;
+    text-decoration: none;
+    transition:0.2s;
+}
+
+/* Hover effect for links within paragraph elements */
+.form-modal p a:hover{
+    color:#222;
+}
+
+/* Responsive styles for screens with max width of 500px */
+@media only screen and (max-width:500px){
+    .form-modal{
+        width:100%;
+    }
+}

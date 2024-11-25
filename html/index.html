@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Farm Fresh - Home</title>
+		
+		<link rel="icon" href="../img/logo.png" type="image/x-icon">
+		
+		<link rel="stylesheet" href="../css/common-style.css">
+		<link rel="stylesheet" type="text/css" href="../css/homestyle.css">
+		
+		<script src="https://kit.fontawesome.com/c712c22f6b.js" crossorigin="anonymous"></script>
+
+		<!-- Link to the external javascript -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+		<!-- Sweet alert CDN link -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	</head>
+	<body onscroll="onScrollAnimations()">
+		<header>
+			<nav id="navigation-bar">
+				<div class="company-logo-div">
+					<img src="../img/logo.png" alt="Website Logo" id="site-logo">
+				</div>
+				<div class="navbar-main-div">
+					<div id="menu" class="humberger-menu" onclick="toggleMenu()">
+						<div id="humberger-first-div"></div>
+						<div id="humberger-second-div"></div>
+						<div id="humberger-third-div"></div>
+					</div>
+					<ul id="navbar-list">
+						<li><a href="./index.html">Home</a></li>
+						<li id="productListingButton"><a href="./productListing.html" onclick="checkUserLogin()">Product Listing</a></li>
+						<!-- <li><a href="./blog.html">Blog</a></li> -->
+						<li><a href="./contact.html">Contact</a></li>
+						<li class="navbar-dropdown" id="registerButton"><a href="./Registration.html">User</a></li>
+                        <li id="cartButton"><a href="./cart.html">Cart</a></li>
+                        <li id="logoutButton" onclick="logoutUser()"><a href="">Logout</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="header">
+				<div class="head-lines">
+					<br>
+					<br>
+					<h1> SERVING FRESH GROWERS ACROSS NORTH AMERICA</h1>
+					<p>
+						We are growers of high-quality young plants from seed and vegetative materials. ,<br>We’re uniquely positioned to accommodate the needs of small to mid-sized operations.
+					</p>
+					<a href="../html/contact.html" id="Knowmore-btn">Know More...</a>
+				</div>
+			</div>
+		</header>
+
+		<!-- services -->
+		<main>
+			<!-- Top scroll button div Start -->
+            <div class="top-scroll-button" id="top-scroll-button">
+                <a href="#">
+                    <img src="../img/UpArrow2.png" alt="Up Arrow">
+                </a>
+            </div>
+            <!-- Top scroll button div End -->
+
+			<section class="colm main-content-div">
+				<h1>WHY CHOOSE FARM FRESH?</h1>
+				<p> WE INVITE YOU TO JOIN OUR GROWING LIST OF SATISFIED CUSTOMERS AND EXPERIENCE OUR COMMITMENT TO INTEGRITY, QUALITY, AND RELIABLE SERVICE. </p>
+	
+				<div class="row">
+					<div class="col left-col">
+						<h3>WE SELL DIRECT</h3>
+						<p>Since we sell our plants directly, we take full responsibility for the quality of each order.</p>
+					</div>
+					<div class="col left-col">
+						<h3>VERY LOW MINIMUMS</h3>
+						<p>You can order as little as half a box to meet our minimums. Orders of 4 or more full boxes ship free!</p>
+					</div>
+					<div class="col right-col">
+						<h3>WE CUSTOM PACKAGE</h3>
+						<p>Since each box is custom packed, you can mix and match plugs and liners of various sizes in the same box!</p>
+					</div>
+					<div class="col right-col">
+						<h3>ENORMOUS LISTING</h3>
+						<p>With more than 3,000 varieties offered in multiple tray sizes, we’re equipped to match any program or budget.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col  left-col">
+						<h3>ALL INCLUSIVE PRICING</h3>
+						<p>Our pricing includes royalties, boxing, and freight for 4 or more full boxes. Absolutely NO hidden charges!</p>
+					</div>
+					<div class="col  left-col">
+						<h3>EXTENSIVE DISCOUNTS</h3>
+						<p>We offer significant discounts for volume and early pay, with a 10% discount for early order!</p>
+					</div>
+					<div class="col right-col">
+						<h3>EXPERT CULTURAL ADVICE</h3>
+						<p>An independent horticulturist with 45+ years of experience is available to answer questions and give advice.</p>
+					</div>
+					<div class="col right-col">
+						<h3>DEPENDABLE DELIVERIES</h3>
+						<p>We arrange each delivery, using the quickest, most reliable carrier to meet your needs. Delivery on our own trucks is available to many areas.</p>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="waves">
+				<div class="wave" id="wave1"></div>
+				<div class="wave" id="wave2"></div>
+				<div class="wave" id="wave3"></div>
+				<div class="wave" id="wave4"></div>
+
+			</div>
+			<ul class="social_icon">
+				<li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+				<li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+				<li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+				<li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+			</ul>
+			<ul class="menu">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Purchase</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
+			<p>&#169;2021 Fram Fresh | All Rights Reserved</p>
+		</footer>
+		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+		<script src="../js/common.js"></script>
+	</body>
+</html>

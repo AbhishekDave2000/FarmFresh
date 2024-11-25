@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Fresh - Product Details</title>
+
+    <link rel="icon" href="../img/logo.png" type="image/x-icon">
+
+    <!-- Link to the external css -->
+    <link rel="stylesheet" href="../css/common-style.css">
+    <link rel="stylesheet" href="../css/productDetails.css">
+
+    <!-- Link to the external javascript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Sweet alert CDN link -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <nav id="navigation-bar">
+            <div class="company-logo-div">
+                <img src="../img/logo.png" alt="Website Logo" id="site-logo">
+            </div>
+            <div class="navbar-main-div">
+                <div id="menu" class="humberger-menu" onclick="toggleMenu()">
+                    <div id="humberger-first-div"></div>
+                    <div id="humberger-second-div"></div>
+                    <div id="humberger-third-div"></div>
+                </div>
+                <ul id="navbar-list">
+                    <li><a href="./index.html">Home</a></li>
+                    <li id="productListingButton"><a href="./productListing.html" onclick="checkUserLogin()">Product Listing</a></li>
+                    <!-- <li><a href="./blog.html">Blog</a></li> -->
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li class="navbar-dropdown" id="registerButton"><a href="./Registration.html">User</a></li>
+                    <li id="cartButton"><a href="./cart.html">Cart</a></li>
+                    <li id="logoutButton" onclick="logoutUser()"><a href="">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="userInfo">
+            <span>Welcome!&nbsp;&nbsp;</span>
+            <span id="loggedInUserInfo"></span>
+        </div>
+    </header>
+
+    <main>
+        <div class="product-details-container" id="product-details-container">
+            <div class="product-image">
+                <img id="product-image" src="" alt="Product Image">
+            </div>
+            <div class="product-info">
+                <h1 id="product-name">Product Name</h1>
+                <p id="product-price">$0.00</p>
+                <p><span id="product-qty"></span>&nbsp;<span id="product-qty-measurement"></span></p>
+                <hr>
+                <h3>Product Description</h3>
+                <p id="product-description"></p>
+                <div class="quantity-selector">
+                    <button id="quantity-minus" class="qty-btn">-</button>
+                    <span id="quantity-display">1</span>
+                    <button id="quantity-plus" class="qty-btn">+</button>
+                </div>
+                <button id="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+
+        </div>
+        <ul class="social_icon">
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Purchase</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <p>&#169;2021 Fram Fresh | All Rights Reserved</p>
+    </footer>
+
+    <script src="../js/common.js"></script>
+    <script src="../js/productDetails.js"></script>
+    <script>
+        let currentUser = localStorage.getItem('currentUser');
+        if (currentUser == null && window.location.pathname != "/html/index.html") {
+            window.location.href = "/html/index.html";
+        }
+    </script>
+</body>
+</html>

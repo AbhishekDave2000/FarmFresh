@@ -1,0 +1,234 @@
+{
+  "categories": {
+    "flowers": [
+      {
+        "id": 1,
+        "name": "rose",
+        "price": 20.0,
+        "qty": 2,
+        "img": "../img/flower/rose.png",
+        "packaging": "Flowers",
+        "desc": "A rose is a woody perennial plant from the genus Rosa, celebrated for its lovely, fragrant flowers and thorn-covered stems. Representing love and beauty, roses are available in various colors, each with its own meaning."
+      },
+      {
+        "id": 2,
+        "name": "sun Flower",
+        "price": 10.0,
+        "qty": 5,
+        "img": "../img/flower/sunflower.png",
+        "packaging": "Flowers",
+        "desc": "A sunflower is a tall, radiant annual plant from the genus Helianthus, recognized for its large, bright yellow flowers that track the sun's movement. They represent admiration, loyalty, and longevity."
+      },
+      {
+        "id": 3,
+        "name": "olia-gozha",
+        "price": 15.0,
+        "qty": 3,
+        "img": "../img/flower/olia-gozha.png",
+        "packaging": "Flowers",
+        "desc": "Olia Gozha, is known for its lush, layered petals and vibrant colors. These flowers symbolize romance, prosperity, and good fortune, making them a popular choice in elegant floral arrangements"
+      },
+      {
+        "id": 4,
+        "name": "mathias",
+        "price": 15.0,
+        "qty": 3,
+        "img": "../img/flower/mathias.png",
+        "packaging": "Flowers",
+        "desc": "Victor Mathis Florist, established in 1896 in Louisville, KY, is renowned for its exquisite floral arrangements and high-quality flowers for all occasions. Their selection includes fresh roses, lilies, and tropical flowers, as well as plants and gourmet gift baskets​"
+      },
+      {
+        "id": 5,
+        "name": "erda",
+        "price": 15.0,
+        "qty": 3,
+        "img": "../img/flower/erda.png",
+        "packaging": "Flowers",
+        "desc": "The Erda Flower from The Legend of Zelda: Breath of the Wild is a mystical, radiant plant with a soft, sweet scent. It is used in the game for potion-making and boosting abilities, embodying the magic and purity of nature."
+      },
+      {
+        "id": 6,
+        "name": "ashkan",
+        "price": 15.0,
+        "qty": 3,
+        "img": "../img/flower/ashkan.png",
+        "packaging": "Flowers",
+        "desc": "The Ashkan Flower is a fictional plant featuring vivid red or violet petals and a distinctive, smoky scent. In fantasy settings, it’s portrayed as a rare and magical herb used for potions and other mystical purposes."
+      }
+    ],
+    "fruits": [
+      {
+        "id": 7,
+        "name": "watermelon",
+        "varieties": ["Gala", "Fuji", "Granny Smith", "Honeycrisp"],
+        "season": "Fall",
+        "qty": 1,
+        "img": "../img/fruit/watermelon.png",
+        "packaging": "Kg",
+        "price": 15.0,
+        "desc": "Watermelon is a cool, juicy fruit with a bright green rind and sweet, pink interior. Its high water content makes it especially refreshing, particularly in warm weather."
+      },
+      {
+        "id": 8,
+        "name": "Banana",
+        "varieties": ["Cavendish", "Red", "Plantain"],
+        "season": "Year-round",
+        "qty": 1,
+        "img": "../img/fruit/banana.png",
+        "packaging": "Kg",
+        "price": 15.0,
+        "desc": "Bananas are a sweet, creamy fruit with a yellow skin that becomes brown when overripe. They’re high in potassium and serve as a quick, healthy snack."
+      },
+      {
+        "id": 9,
+        "name": "berry",
+        "varieties": ["Navel", "Valencia", "Mandarin", "Blood Orange"],
+        "season": "Winter",
+        "qty": 1,
+        "img": "../img/fruit/berry.png",
+        "packaging": "Kg",
+        "price": 15.0,
+        "desc": "Berries are colorful, bite-sized fruits that offer a sweet or tart taste and are rich in antioxidants. They include varieties like strawberries, blueberries, and raspberries, and are popular in fresh dishes, desserts, and smoothies."
+      },
+      {
+        "id": 10,
+        "name": "melon",
+        "varieties": ["Navel", "Valencia", "Mandarin", "Blood Orange"],
+        "season": "Winter",
+        "qty": 1,
+        "img": "../img/fruit/melon.png",
+        "price": 15.0,
+        "desc": "Melons are large, succulent fruits with a sweet taste and high moisture content. Varieties such as cantaloupe and honeydew are commonly eaten fresh or added to fruit salads."
+      },
+      {
+        "id": 11,
+        "name": "pienapple",
+        "varieties": ["Navel", "Valencia", "Mandarin", "Blood Orange"],
+        "season": "Winter",
+        "qty": 1,
+        "img": "../img/fruit/pienapple.png",
+        "price": 15.0,
+        "desc": "Pineapples are tropical fruits with a sweet-tart taste and a spiky, rugged skin. Their juicy, yellow interior is enjoyed fresh, in desserts, or as a zesty addition to savory recipes."
+      },
+      {
+        "id": 12,
+        "name": "strawberry",
+        "varieties": ["Navel", "Valencia", "Mandarin", "Blood Orange"],
+        "season": "Winter",
+        "qty": 1,
+        "img": "../img/fruit/strawberry.png",
+        "price": 15.0,
+        "desc": "Strawberries are vibrant red berries known for their sweet, juicy taste and pleasant aroma. They are often enjoyed fresh, incorporated into desserts, or added to salads and smoothies."
+      }
+    ],
+    "vegetables": [
+      {
+        "id": 13,
+        "name": "Carrot",
+        "varieties": ["Imperator", "Nantes", "Danvers", "Chantenay"],
+        "season": "Fall",
+        "packaging": "Kg",
+        "qty": 1,
+        "img": "../img/vegitable/carrot.png",
+        "price": 15.0,
+        "desc": "Carrots are crisp, orange vegetables with a subtle sweetness. They’re versatile in the kitchen, often used in salads, soups, or enjoyed as a nutritious snack."
+      },
+      {
+        "id": 14,
+        "name": "mashroom",
+        "varieties": ["Imperator", "Nantes", "Danvers", "Chantenay"],
+        "season": "Fall",
+        "packaging": "Kg",
+        "qty": 1,
+        "img": "../img/vegitable/mashroom.png",
+        "price": 15.0,
+        "desc": "Mushrooms are adaptable fungi with a rich, savory taste and a texture similar to meat. They are commonly used in diverse recipes, including soups, salads, stir-fries, and pizzas."
+      },
+      {
+        "id": 15,
+        "name": "onion",
+        "varieties": ["Imperator", "Nantes", "Danvers", "Chantenay"],
+        "season": "Fall",
+        "packaging": "Kg",
+        "qty": 1,
+        "img": "../img/vegitable/onion.png",
+        "price": 15.0,
+        "desc": "Onions are aromatic, layered vegetables with a sharp taste that mellows and sweetens when cooked. They are essential in a variety of dishes, enhancing the flavor of soups, stews, and sauces."
+      },
+      {
+        "id": 16,
+        "name": "peapod",
+        "varieties": ["Imperator", "Nantes", "Danvers", "Chantenay"],
+        "season": "Fall",
+        "packaging": "Kg",
+        "qty": 1,
+        "img": "../img/vegitable/peapod.png",
+        "price": 15.0,
+        "desc": "Peapods are crunchy, green pods filled with sweet, delicate peas. They are often added to salads, stir-fries, or enjoyed as a fresh snack, providing a crisp texture and vibrant flavor."
+      },
+      {
+        "id": 17,
+        "name": "potato",
+        "varieties": ["Imperator", "Nantes", "Danvers", "Chantenay"],
+        "season": "Fall",
+        "packaging": "Kg",
+        "qty": 1,
+        "img": "../img/vegitable/potato.png",
+        "price": 15.0,
+        "desc": "Potatoes are adaptable tubers with a starchy consistency and subtle taste. They can be cooked in numerous ways, such as baking, boiling, frying, or mashing, and are essential in many culinary traditions."
+      },
+      {
+        "id": 18,
+        "name": "tomato",
+        "varieties": ["Imperator", "Nantes", "Danvers", "Chantenay"],
+        "season": "Fall",
+        "qty": 1,
+        "img": "../img/vegitable/tomato.png",
+        "price": 15.0,
+        "desc": "Tomatoes are succulent, red fruits with a tangy taste and wide-ranging culinary uses. They can be enjoyed fresh in salads, made into sauces, or incorporated into numerous dishes for added flavor."
+      }
+    ],
+    "dairy": [
+      {
+        "id": 19,
+        "name": "Milk",
+        "varieties": ["Whole", "Skim", "2%", "Soy"],
+        "packaging": "Liter",
+        "qty": 1,
+        "img": "../img/dairy/milk.png",
+        "price": 15.0,
+        "desc": "Milk is a creamy, nutritious liquid from mammals, packed with calcium and protein. It’s typically drunk on its own, mixed into drinks, or used in cooking and baking to improve flavor and texture."
+      },
+      {
+        "id": 20,
+        "name": "Cheese",
+        "varieties": ["Cheddar", "Mozzarella", "Swiss", "Blue"],
+        "packaging": "Kg",
+        "qty": 1,
+        "img": "../img/dairy/cheese.png",
+        "price": 15.0,
+        "desc": "Cheese is a diverse dairy item created by curdling milk. It ranges from soft, creamy brie to tangy, aged cheddar, with flavors and textures differing based on its ingredients and how long it’s aged."
+      },
+      {
+        "id": 21,
+        "name": "Yogurt",
+        "varieties": ["Plain", "Greek", "Flavored", "Skyr"],
+        "packaging": "500 g",
+        "qty": 1,
+        "img": "../img/dairy/yogurt.png",
+        "price": 15.0,
+        "desc": "Yogurt is a dairy product made by fermenting milk with beneficial bacteria. It features a tangy taste and smooth texture, available in both plain and flavored options. Its probiotic properties can support digestive health."
+      },
+      {
+        "id": 22,
+        "name": "butter",
+        "varieties": ["Cheddar", "Mozzarella", "Swiss", "Blue"],
+        "packaging": "1 Kg",
+        "qty": 1,
+        "img": "../img/dairy/butter.png",
+        "price": 15.0,
+        "desc": "Butter is a creamy dairy item created by churning cream to extract the fat from the liquid. It has a velvety texture and is widely used in cooking, baking, and as a spread. Its taste can vary from subtle to slightly tangy based on its preparation."
+      }
+    ]
+  }
+}
